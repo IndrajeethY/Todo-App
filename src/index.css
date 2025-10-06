@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Anime-inspired light theme */
+    --background: 240 25% 97%;
+    --foreground: 250 50% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 250 50% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 250 50% 10%;
+
+    --primary: 265 85% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 190 75% 52%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 20% 92%;
+    --muted-foreground: 250 20% 40%;
+
+    --accent: 315 80% 62%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 80% 62%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 25% 85%;
+    --input: 240 25% 88%;
+    --ring: 265 85% 58%;
+
+    --radius: 1rem;
+
+    /* Enhanced Gradients */
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(265 85% 58%),
+      hsl(315 80% 62%),
+      hsl(190 75% 52%)
+    );
+    --gradient-twilight: linear-gradient(
+      135deg,
+      hsl(270 80% 50%),
+      hsl(320 75% 60%)
+    );
+    --gradient-dawn: linear-gradient(
+      135deg,
+      hsl(180 75% 45%),
+      hsl(200 75% 55%)
+    );
+    --gradient-night: linear-gradient(
+      135deg,
+      hsl(255 65% 25%),
+      hsl(275 75% 35%)
+    );
+    --gradient-glass: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.05)
+    );
+
+    /* Enhanced Shadows */
+    --shadow-glow: 0 0 40px hsla(265, 85%, 58%, 0.4);
+    --shadow-glow-lg: 0 0 60px hsla(265, 85%, 58%, 0.5);
+    --shadow-card: 0 8px 32px hsla(250, 50%, 10%, 0.12);
+    --shadow-elevated: 0 12px 48px hsla(250, 50%, 10%, 0.18);
+  }
+
+  .dark {
+    /* Enhanced anime dark theme */
+    --background: 252 45% 6%;
+    --foreground: 240 25% 98%;
+
+    --card: 252 40% 10%;
+    --card-foreground: 240 25% 98%;
+
+    --popover: 252 40% 10%;
+    --popover-foreground: 240 25% 98%;
+
+    --primary: 265 90% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 190 80% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 252 35% 16%;
+    --muted-foreground: 240 20% 70%;
+
+    --accent: 315 85% 68%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 252 35% 18%;
+    --input: 252 35% 16%;
+    --ring: 265 90% 65%;
+
+    /* Enhanced dark gradients */
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(265 90% 55%),
+      hsl(315 85% 58%),
+      hsl(190 80% 48%)
+    );
+    --gradient-twilight: linear-gradient(
+      135deg,
+      hsl(270 85% 45%),
+      hsl(320 80% 55%)
+    );
+    --gradient-dawn: linear-gradient(
+      135deg,
+      hsl(180 80% 40%),
+      hsl(200 80% 48%)
+    );
+    --gradient-night: linear-gradient(
+      135deg,
+      hsl(255 70% 20%),
+      hsl(275 80% 30%)
+    );
+    --gradient-glass: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.03)
+    );
+
+    /* Enhanced dark shadows */
+    --shadow-glow: 0 0 50px hsla(265, 90%, 65%, 0.5);
+    --shadow-glow-lg: 0 0 80px hsla(265, 90%, 65%, 0.6);
+    --shadow-card: 0 8px 32px hsla(0, 0%, 0%, 0.4);
+    --shadow-elevated: 0 12px 48px hsla(0, 0%, 0%, 0.6);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
