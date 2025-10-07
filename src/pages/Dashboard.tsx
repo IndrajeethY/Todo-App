@@ -85,7 +85,7 @@ const Dashboard = () => {
               backgroundClip: "text",
             }}
           >
-            TaskFlow
+            TaskManager
           </div>
           <p className="text-muted-foreground">Loading your tasks...</p>
         </div>
@@ -113,7 +113,7 @@ const Dashboard = () => {
                 backgroundClip: "text",
               }}
             >
-              TaskFlow
+              TaskManager
             </h1>
           </div>
           <div className="flex items-center gap-3">

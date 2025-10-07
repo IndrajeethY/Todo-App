@@ -65,7 +65,7 @@ const Auth = () => {
                     backgroundClip: "text",
                   }}
                 >
-                  TaskFlow
+                  Task Manager
                 </h1>
               </div>
               <p className="text-muted-foreground text-lg">
@@ -127,12 +127,6 @@ const Auth = () => {
                 {loading ? "Signing In..." : "Sign In"}
               </Button>
             </form>
-            <div className="text-center">
-              <p className="text-xs text-muted-foreground/70">
-                Default credentials:{" "}
-                <span className="text-primary font-mono">admin / admin</span>
-              </p>
-            </div>
           </div>
         </Card>
       </div>
