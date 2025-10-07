@@ -18,6 +18,7 @@ Create a `.env` file in the root directory:
 ```
 VITE_API_BASE_URL=http://localhost:8080
 ```
+
 For production, set `VITE_API_BASE_URL` to your deployed backend server.
 
 ### Authentication
@@ -38,7 +39,8 @@ For production, set `VITE_API_BASE_URL` to your deployed backend server.
 
 ## How to Run Locally
 
-**Requirements:**  
+**Requirements:**
+
 - Node.js & npm (consider using [nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
 
 **Steps:**
